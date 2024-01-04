@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { Back, BackBox, Hero1, Hero2 } from "../../assets";
+import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
 
 const Les1Sub1 = () => {
   const navigation = useNavigation();
@@ -20,7 +20,7 @@ const Les1Sub1 = () => {
   }, []);
 
   return (
-    <SafeAreaView className="relative flex-1 bg-[#074548] pt-10">
+    <SafeAreaView className="relative flex-1 pt-10">
       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
         {/* Back Button start */}
         <View className="px-3 h-14">
@@ -29,7 +29,7 @@ const Les1Sub1 = () => {
               className="items-center"
               onPress={() => navigation.navigate("Lesson1")}
             >
-              <Image source={BackBox} width={200} height={30} />
+              <Image source={BackBox2} width={200} height={30} />
             </TouchableOpacity>
           </View>
         </View>
@@ -52,8 +52,8 @@ const Les1Sub1 = () => {
         {/* Lesson Banner end */}
 
         {/* Lesson Categories Start */}
-        <View className="px-3 bg-slate-800">
-          <Text className="py-3 text-base font-bold text-white">
+        <View className="px-3 bg-gray-300">
+          <Text className="py-3 text-base font-bold text-gray-800">
             ජීව දේහය තුල ඉටු කරන කෘත්‍යන්ට අදාළව ජීවය සඳහා වැදගත් වන ජලයේ භෞතික
             හා රසායනික ගුණ සැකසී ඇති ආකාරය විස්තර කරන්න.
           </Text>
@@ -62,7 +62,7 @@ const Les1Sub1 = () => {
 
         {/* Lesson Note Start */}
         <View className="py-3">
-          <Text className="px-3 text-base text-justify text-slate-300">
+          <Text className="px-3 text-base text-justify text-gray-800">
             ජලය ඉතා වැදගත් අකාබනික අණුවකි.{"\n"}
             {"\n"}ජලය නොමැතිව මේ ග්‍රහලෝකය තුල ජීවයක් නොමැත.{"\n"}
             {"\n"}ජීව සෛල වල වැදගත් රසායනික ස‍ංඝටකයක් වීම.{"\n"}
@@ -88,17 +88,17 @@ const Les1Sub1 = () => {
             සංඛ්‍යාතයකින් සිදුවේ.
           </Text>
           {/* Subtopic start */}
-          <View className="px-3 mt-10 mb-2 bg-slate-800">
-            <Text className="py-3 text-base font-bold text-white">
+          <View className="px-3 mt-10 mb-2 bg-slate-300">
+            <Text className="py-3 text-base font-bold text-gray-800">
               ජලයේ භෞතික ගුණ
             </Text>
           </View>
           {/* Subtopic end */}
-          <Text className="px-3 pt-3 text-base font-bold text-slate-200">
+          <Text className="px-3 pt-3 text-base font-bold text-gray-800">
             සංශක්ති හැසිරීම
           </Text>
           {/* Content Start */}
-          <Text className="px-3 text-base text-justify text-slate-300">
+          <Text className="px-3 text-base text-justify text-gray-800">
             හයිඩ්‍රජන් බන්ධන නිසා ජල අණු අතර ඇති ආකර්ෂණය සංශක්තියයි.{"\n"}
             {"\n"}ජල අණු හා වෙනත් ද්‍රව්‍ය අතර ඇතිවන ආකර්ෂණය ආශක්තියයි.{"\n"}
             {"\n"}ඉහත ගුණ දෙක නිසා පරිවහන මාධ්‍යයක් ලෙස ක්‍රියාකිරීමට හැකියාව
@@ -118,14 +118,14 @@ const Les1Sub1 = () => {
           </Text>
           {/* Content End */}
           {/* Subtopic start */}
-          <View className="px-3 mt-10 mb-2 bg-slate-800">
-            <Text className="py-3 text-base font-bold text-white">
+          <View className="px-3 mt-10 mb-2 bg-slate-300">
+            <Text className="py-3 text-base font-bold text-gray-800">
               උෂ්ණත්වය මධ්‍යස්ත කිරීමට ඇති හැකියාව
             </Text>
           </View>
           {/* Subtopic end */}
           {/* Content Start */}
-          <Text className="px-3 text-base text-justify text-slate-300">
+          <Text className="px-3 text-base text-justify text-gray-800">
             සාපේක්ෂව අධික තාප ශක්ති ප්‍රමාණයක් ජලයට අවශෝෂණය කිරීම හෝ නිදහස්
             කිරීම මගින් ජලයේ උෂ්ණතවය වෙනස් වීම අවම වේ.{"\n"}
             {"\n"}ජලයේ අධික විශිෂ්ඨ තාපය නිසා පෘථිවිය මත උෂ්ණත්වය උච්චාවචනය
@@ -142,14 +142,14 @@ const Les1Sub1 = () => {
           </Text>
           {/* Content End */}
           {/* Subtopic start */}
-          <View className="px-3 mt-10 mb-2 bg-slate-800">
-            <Text className="py-3 text-base font-bold text-white">
+          <View className="px-3 mt-10 mb-2 bg-slate-300">
+            <Text className="py-3 text-base font-bold text-gray-800">
               හිමායනයේදී සිදුවන ප්‍රසාරණය
             </Text>
           </View>
           {/* Subtopic end */}
           {/* Content Start */}
-          <Text className="px-3 text-base text-justify text-slate-300">
+          <Text className="px-3 text-base text-justify text-gray-800">
             සාමන්‍යයෙන් ද්‍රවයක උෂ්ණත්වය වැඩිවන විට ඝනත්වය අඩු වේ.{"\n"}
             {"\n"}උෂ්ණත්වය අඩුවීමේදී ඝනත්වය වැඩි වේ.{"\n"}
             {"\n"}ජලය උෂ්ණත්වය 4 සෙල්සියස් අංශක ට වඩා අඩුවන විට හිමායනය ආරම්භ වී
@@ -161,14 +161,14 @@ const Les1Sub1 = () => {
           </Text>
           {/* Content End */}
           {/* Subtopic start */}
-          <View className="px-3 mt-10 mb-2 bg-slate-800">
-            <Text className="py-3 text-base font-bold text-white">
+          <View className="px-3 mt-10 mb-2 bg-slate-300">
+            <Text className="py-3 text-base font-bold text-gray-800">
               ද්‍රාවකයක් ලෙස ඇති සර්ව නිපුණත්වය
             </Text>
           </View>
           {/* Subtopic end */}
           {/* Content Start */}
-          <Text className="px-3 text-base text-justify text-slate-300">
+          <Text className="px-3 text-base text-justify text-gray-800">
             ජලයේ ධ්‍රැවීයතාව නිසා ජලයට ලැබී ඇති ගුණයකි.{"\n"}
             {"\n"}ධ්‍රැවීය අණු - ග්ලූකෝස් අයනික සංයෝග -( NaCl) සෝඩියම් ක්ලෝරයිඩ්
             .{"\n"}
