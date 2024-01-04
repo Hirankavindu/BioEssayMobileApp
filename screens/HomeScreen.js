@@ -73,7 +73,7 @@ const HomeScreen = () => {
         {/* Start of Bio essay categories */}
         <View className="flex items-center px-3 pt-7">
           {/* Lesson 1 start */}
-          <View className="justify-center w-full h-16 rounded-lg bg-[#265073]">
+          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073]" onPress={()=>navigation.navigate("Lesson1")}>
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -84,11 +84,11 @@ const HomeScreen = () => {
                 </View>
               </View>
             </View>
-          </View>
+          </TouchableOpacity>
           {/* Lesson 1 end */}
 
           {/* Lesson 2 start */}
-          <View className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3">
+          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Lesson2")}>
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -99,11 +99,11 @@ const HomeScreen = () => {
                 </View>
               </View>
             </View>
-          </View>
+          </TouchableOpacity>
           {/* Lesson 2 end */}
 
           {/* Lesson 3 start */}
-          <View className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3">
+          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Lesson3")}>
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -114,11 +114,11 @@ const HomeScreen = () => {
                 </View>
               </View>
             </View>
-          </View>
+          </TouchableOpacity>
           {/* Lesson 3 end */}
 
           {/* Lesson 4 start */}
-          <View className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3">
+          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Les1Sub1")}>
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -129,7 +129,7 @@ const HomeScreen = () => {
                 </View>
               </View>
             </View>
-          </View>
+          </TouchableOpacity>
           {/* Lesson 4 end */}
 
           {/* Lesson 5 start */}
