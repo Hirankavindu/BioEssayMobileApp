@@ -53,6 +53,23 @@ import Les4Sub2 from "./screens/Lesson4/Les4Sub2";
 import Les4Sub3 from "./screens/Lesson4/Les4Sub3";
 import Les4Sub4 from "./screens/Lesson4/Les4Sub4";
 import Les4Sub5 from "./screens/Lesson4/Les4Sub5";
+import Les4Sub6 from "./screens/Lesson4/Les4Sub6";
+import Les4Sub7 from "./screens/Lesson4/Les4Sub7";
+import Les4Sub8 from "./screens/Lesson4/Les4Sub8";
+import Les4Sub9 from "./screens/Lesson4/Les4Sub9";
+import Les4Sub10 from "./screens/Lesson4/Les4Sub10";
+import Les4Sub11 from "./screens/Lesson4/Les4Sub11";
+import Les4Sub12 from "./screens/Lesson4/Les4Sub12";
+import Les4Sub13 from "./screens/Lesson4/Les4Sub13";
+import Les4Sub14 from "./screens/Lesson4/Les4Sub14";
+import Les4Sub15 from "./screens/Lesson4/Les4Sub15";
+import Les4Sub16 from "./screens/Lesson4/Les4Sub16";
+import Les4Sub17 from "./screens/Lesson4/Les4Sub17";
+import Les4Sub18 from "./screens/Lesson4/Les4Sub18";
+import Les4Sub19 from "./screens/Lesson4/Les4Sub19";
+import Les4Sub20 from "./screens/Lesson4/Les4Sub20";
+import Les4Sub21 from "./screens/Lesson4/Les4Sub21";
+import Les4Sub22 from "./screens/Lesson4/Les4Sub22";
 
 const Stack = createNativeStackNavigator();
 
@@ -113,6 +130,23 @@ export default function App() {
         <Stack.Screen name="Les4Sub3" component={Les4Sub3}/>
         <Stack.Screen name="Les4Sub4" component={Les4Sub4}/>
         <Stack.Screen name="Les4Sub5" component={Les4Sub5}/>
+        <Stack.Screen name="Les4Sub6" component={Les4Sub6}/>
+        <Stack.Screen name="Les4Sub7" component={Les4Sub7}/>
+        <Stack.Screen name="Les4Sub8" component={Les4Sub8}/>
+        <Stack.Screen name="Les4Sub9" component={Les4Sub9}/>
+        <Stack.Screen name="Les4Sub10" component={Les4Sub10}/>
+        <Stack.Screen name="Les4Sub11" component={Les4Sub11}/>
+        <Stack.Screen name="Les4Sub12" component={Les4Sub12}/>
+        <Stack.Screen name="Les4Sub13" component={Les4Sub13}/>
+        <Stack.Screen name="Les4Sub14" component={Les4Sub14}/>
+        <Stack.Screen name="Les4Sub15" component={Les4Sub15}/>
+        <Stack.Screen name="Les4Sub16" component={Les4Sub16}/>
+        <Stack.Screen name="Les4Sub17" component={Les4Sub17}/>
+        <Stack.Screen name="Les4Sub18" component={Les4Sub18}/>
+        <Stack.Screen name="Les4Sub19" component={Les4Sub19}/>
+        <Stack.Screen name="Les4Sub20" component={Les4Sub20}/>
+        <Stack.Screen name="Les4Sub21" component={Les4Sub21}/>
+        <Stack.Screen name="Les4Sub22" component={Les4Sub22}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
