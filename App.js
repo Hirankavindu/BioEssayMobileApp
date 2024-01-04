@@ -49,6 +49,10 @@ import Les3Sub15 from "./screens/Lesson3/Les3Sub15";
 import Les3Sub16 from "./screens/Lesson3/Les3Sub16";
 import Lesson4 from "./screens/Lesson4";
 import Les4Sub1 from "./screens/Lesson4/Les4Sub1";
+import Les4Sub2 from "./screens/Lesson4/Les4Sub2";
+import Les4Sub3 from "./screens/Lesson4/Les4Sub3";
+import Les4Sub4 from "./screens/Lesson4/Les4Sub4";
+import Les4Sub5 from "./screens/Lesson4/Les4Sub5";
 
 const Stack = createNativeStackNavigator();
 
@@ -105,6 +109,10 @@ export default function App() {
         <Stack.Screen name="Les3Sub16" component={Les3Sub16} />
         <Stack.Screen name="Lesson4" component={Lesson4}/>
         <Stack.Screen name="Les4Sub1" component={Les4Sub1}/>
+        <Stack.Screen name="Les4Sub2" component={Les4Sub2}/>
+        <Stack.Screen name="Les4Sub3" component={Les4Sub3}/>
+        <Stack.Screen name="Les4Sub4" component={Les4Sub4}/>
+        <Stack.Screen name="Les4Sub5" component={Les4Sub5}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

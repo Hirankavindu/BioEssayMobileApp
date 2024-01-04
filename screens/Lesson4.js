@@ -80,6 +80,84 @@ const Lesson4 = () => {
             </View>
           </TouchableOpacity>
           {/* Sub Lesson 1 end */}
+
+          {/* Sub Lesson 2 start */}
+          <TouchableOpacity
+            className="justify-center w-full h-20 rounded-lg bg-[#3a301c] mt-3"
+            onPress={() => navigation.navigate("Les4Sub2")}
+          >
+            <View className="flex flex-col items-center">
+              <View className="flex-row w-full">
+                <Text className="pl-3 pr-10 text-sm font-bold text-white">
+                  ශාක දේහයක දක්නට ලැබෙන පූර්ක පටක පද්ධතියේ සංරචක වල මූලික ලක්ෂණ
+                  විස්තර කරන්න.
+                </Text>
+                <View className="absolute inset-y-0 right-0 justify-center pr-3 mr-3">
+                  <Image source={Back} className="w-[10] h-[15]" />
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+          {/* Sub Lesson 2 end */}
+
+          {/* Sub Lesson 2 start */}
+          <TouchableOpacity
+            className="justify-center w-full h-24 rounded-lg bg-[#3a301c] mt-3"
+            onPress={() => navigation.navigate("Les4Sub3")}
+          >
+            <View className="flex flex-col items-center">
+              <View className="flex-row w-full">
+                <Text className="pl-3 pr-10 text-sm font-bold text-white">
+                  ශාක දේහයක දක්නට ලැබෙන සනාල පටක පද්ධතියේ සංරචක වල ව්‍යුහය, ඒවා
+                  මගින් ඉටු කරන කෘත්‍යට අදාළව සැකසී ඇති අයුරු විස්තර කරන්න.
+                </Text>
+                <View className="absolute inset-y-0 right-0 justify-center pr-3 mr-3">
+                  <Image source={Back} className="w-[10] h-[15]" />
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+          {/* Sub Lesson 2 end */}
+
+          {/* Sub Lesson 2 start */}
+          <TouchableOpacity
+            className="justify-center w-full h-24 rounded-lg bg-[#3a301c] mt-3"
+            onPress={() => navigation.navigate("Les4Sub4")}
+          >
+            <View className="flex flex-col items-center">
+              <View className="flex-row w-full">
+                <Text className="pl-3 pr-10 text-sm font-bold text-white">
+                  ද්වීබීජ පත්‍රී ශාක මුලෙහි දර්ශීය ව්‍යුහය විස්තර කරන්න.{"\n"}ඒක
+                  බීජ පත්‍රී ශාක මුලෙහි ව්‍යුහය ඉන් වෙනස් වන්නේ කවර ලක්ෂණ
+                  හේතුවෙන් ද.?
+                </Text>
+                <View className="absolute inset-y-0 right-0 justify-center pr-3 mr-3">
+                  <Image source={Back} className="w-[10] h-[15]" />
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+          {/* Sub Lesson 2 end */}
+
+          {/* Sub Lesson 2 start */}
+          <TouchableOpacity
+            className="justify-center w-full h-24 rounded-lg bg-[#3a301c] mt-3"
+            onPress={() => navigation.navigate("Les4Sub5")}
+          >
+            <View className="flex flex-col items-center">
+              <View className="flex-row w-full">
+                <Text className="pl-3 pr-10 text-sm font-bold text-white">
+                  දිවීබීජපත්‍රී ශාක කද ඒ දර්ශීය ව්‍යුහය විස්තර කරන්න.{"\n"}ඒක
+                  බීජ පත්‍රී ශාක කදෙහි ව්‍යුහය ඉන් වෙනස් වන්නේ කවර ලක්ෂණ
+                  හේතුවෙන් ද.?
+                </Text>
+                <View className="absolute inset-y-0 right-0 justify-center pr-3 mr-3">
+                  <Image source={Back} className="w-[10] h-[15]" />
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+          {/* Sub Lesson 2 end */}
         </View>
       </ScrollView>
     </SafeAreaView>
