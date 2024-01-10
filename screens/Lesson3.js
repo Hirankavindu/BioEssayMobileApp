@@ -19,7 +19,7 @@ const Lesson3 = () => {
     });
   }, []);
   return (
-    <SafeAreaView className="relative flex-1">
+    <View className="relative flex-1">
       <ScrollView verticle={true} showsVerticalScrollIndicator={false}>
         {/* Banner Start */}
         <View className="h-96 bg-[#FFC0D9] flex-col">
@@ -374,7 +374,7 @@ const Lesson3 = () => {
         </View>
         {/* Lesson Category end */}
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
 

@@ -1,6 +1,12 @@
-import { NavigationContainer } from "@react-navigation/native";
+import React, { useLayoutEffect } from "react";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from './screens/HomeScreen';
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+import HomeScreen from "./screens/HomeScreen";
 import Lesson1 from "./screens/Lesson1";
 import Lesson2 from "./screens/Lesson2";
 import Lesson3 from "./screens/Lesson3";
@@ -70,85 +76,177 @@ import Les4Sub19 from "./screens/Lesson4/Les4Sub19";
 import Les4Sub20 from "./screens/Lesson4/Les4Sub20";
 import Les4Sub21 from "./screens/Lesson4/Les4Sub21";
 import Les4Sub22 from "./screens/Lesson4/Les4Sub22";
+import Menu from "./screens/Menu/Menu";
+import Notification from "./screens/Notification/Notification";
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+const LessonList = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Lesson1" component={Lesson1} />
+    <Stack.Screen name="Lesson2" component={Lesson2} />
+    <Stack.Screen name="Lesson3" component={Lesson3} />
+    <Stack.Screen name="Les1Sub1" component={Les1Sub1} />
+    <Stack.Screen name="Les2Sub1" component={Les2Sub1} />
+    <Stack.Screen name="Les2Sub2" component={Les2Sub2} />
+    <Stack.Screen name="Les2Sub3" component={Les2Sub3} />
+    <Stack.Screen name="Les2Sub4" component={Les2Sub4} />
+    <Stack.Screen name="Les2Sub5" component={Les2Sub5} />
+    <Stack.Screen name="Les2Sub6" component={Les2Sub6} />
+    <Stack.Screen name="Les2Sub7" component={Les2Sub7} />
+    <Stack.Screen name="Les2Sub8" component={Les2Sub8} />
+    <Stack.Screen name="Les2Sub9" component={Les2Sub9} />
+    <Stack.Screen name="Les2Sub10" component={Les2Sub10} />
+    <Stack.Screen name="Les2Sub11" component={Les2Sub11} />
+    <Stack.Screen name="Les2Sub12" component={Les2Sub12} />
+    <Stack.Screen name="Les2Sub13" component={Les2Sub13} />
+    <Stack.Screen name="Les2Sub14" component={Les2Sub14} />
+    <Stack.Screen name="Les2Sub15" component={Les2Sub15} />
+    <Stack.Screen name="Les2Sub16" component={Les2Sub16} />
+    <Stack.Screen name="Les2Sub17" component={Les2Sub17} />
+    <Stack.Screen name="Les2Sub18" component={Les2Sub18} />
+    <Stack.Screen name="Les2Sub19" component={Les2Sub19} />
+    <Stack.Screen name="Les2Sub20" component={Les2Sub20} />
+    <Stack.Screen name="Les2Sub21" component={Les2Sub21} />
+    <Stack.Screen name="Les2Sub22" component={Les2Sub22} />
+    <Stack.Screen name="Les2Sub23" component={Les2Sub23} />
+    <Stack.Screen name="Les2Sub24" component={Les2Sub24} />
+    <Stack.Screen name="Les2Sub25" component={Les2Sub25} />
+    <Stack.Screen name="Les2Sub26" component={Les2Sub26} />
+    <Stack.Screen name="Les3Sub1" component={Les3Sub1} />
+    <Stack.Screen name="Les3Sub2" component={Les3Sub2} />
+    <Stack.Screen name="Les3Sub3" component={Les3Sub3} />
+    <Stack.Screen name="Les3Sub4" component={Les3Sub4} />
+    <Stack.Screen name="Les3Sub5" component={Les3Sub5} />
+    <Stack.Screen name="Les3Sub6" component={Les3Sub6} />
+    <Stack.Screen name="Les3Sub7" component={Les3Sub7} />
+    <Stack.Screen name="Les3Sub8" component={Les3Sub8} />
+    <Stack.Screen name="Les3Sub9" component={Les3Sub9} />
+    <Stack.Screen name="Les3Sub10" component={Les3Sub10} />
+    <Stack.Screen name="Les3Sub11" component={Les3Sub11} />
+    <Stack.Screen name="Les3Sub12" component={Les3Sub12} />
+    <Stack.Screen name="Les3Sub13" component={Les3Sub13} />
+    <Stack.Screen name="Les3Sub14" component={Les3Sub14} />
+    <Stack.Screen name="Les3Sub15" component={Les3Sub15} />
+    <Stack.Screen name="Les3Sub16" component={Les3Sub16} />
+    <Stack.Screen name="Lesson4" component={Lesson4} />
+    <Stack.Screen name="Les4Sub1" component={Les4Sub1} />
+    <Stack.Screen name="Les4Sub2" component={Les4Sub2} />
+    <Stack.Screen name="Les4Sub3" component={Les4Sub3} />
+    <Stack.Screen name="Les4Sub4" component={Les4Sub4} />
+    <Stack.Screen name="Les4Sub5" component={Les4Sub5} />
+    <Stack.Screen name="Les4Sub6" component={Les4Sub6} />
+    <Stack.Screen name="Les4Sub7" component={Les4Sub7} />
+    <Stack.Screen name="Les4Sub8" component={Les4Sub8} />
+    <Stack.Screen name="Les4Sub9" component={Les4Sub9} />
+    <Stack.Screen name="Les4Sub10" component={Les4Sub10} />
+    <Stack.Screen name="Les4Sub11" component={Les4Sub11} />
+    <Stack.Screen name="Les4Sub12" component={Les4Sub12} />
+    <Stack.Screen name="Les4Sub13" component={Les4Sub13} />
+    <Stack.Screen name="Les4Sub14" component={Les4Sub14} />
+    <Stack.Screen name="Les4Sub15" component={Les4Sub15} />
+    <Stack.Screen name="Les4Sub16" component={Les4Sub16} />
+    <Stack.Screen name="Les4Sub17" component={Les4Sub17} />
+    <Stack.Screen name="Les4Sub18" component={Les4Sub18} />
+    <Stack.Screen name="Les4Sub19" component={Les4Sub19} />
+    <Stack.Screen name="Les4Sub20" component={Les4Sub20} />
+    <Stack.Screen name="Les4Sub21" component={Les4Sub21} />
+    <Stack.Screen name="Les4Sub22" component={Les4Sub22} />
+  </Stack.Navigator>
+);
+
+const MenuPage = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="Menu" component={Menu} />
+    <Stack.Screen name="Notification" component={Notification} />
+  </Stack.Navigator>
+);
+
+const NotificationPage = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="Notification" component={Notification} />
+  </Stack.Navigator>
+);
+
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Lesson1" component={Lesson1} />
-        <Stack.Screen name="Lesson2" component={Lesson2} />
-        <Stack.Screen name="Lesson3" component={Lesson3} />
-        <Stack.Screen name="Les1Sub1" component={Les1Sub1} />
-        <Stack.Screen name="Les2Sub1" component={Les2Sub1} />
-        <Stack.Screen name="Les2Sub2" component={Les2Sub2} />
-        <Stack.Screen name="Les2Sub3" component={Les2Sub3} />
-        <Stack.Screen name="Les2Sub4" component={Les2Sub4} />
-        <Stack.Screen name="Les2Sub5" component={Les2Sub5} />
-        <Stack.Screen name="Les2Sub6" component={Les2Sub6} />
-        <Stack.Screen name="Les2Sub7" component={Les2Sub7} />
-        <Stack.Screen name="Les2Sub8" component={Les2Sub8} />
-        <Stack.Screen name="Les2Sub9" component={Les2Sub9} />
-        <Stack.Screen name="Les2Sub10" component={Les2Sub10} />
-        <Stack.Screen name="Les2Sub11" component={Les2Sub11} />
-        <Stack.Screen name="Les2Sub12" component={Les2Sub12} />
-        <Stack.Screen name="Les2Sub13" component={Les2Sub13} />
-        <Stack.Screen name="Les2Sub14" component={Les2Sub14} />
-        <Stack.Screen name="Les2Sub15" component={Les2Sub15} />
-        <Stack.Screen name="Les2Sub16" component={Les2Sub16} />
-        <Stack.Screen name="Les2Sub17" component={Les2Sub17} />
-        <Stack.Screen name="Les2Sub18" component={Les2Sub18} />
-        <Stack.Screen name="Les2Sub19" component={Les2Sub19} />
-        <Stack.Screen name="Les2Sub20" component={Les2Sub20} />
-        <Stack.Screen name="Les2Sub21" component={Les2Sub21} />
-        <Stack.Screen name="Les2Sub22" component={Les2Sub22} />
-        <Stack.Screen name="Les2Sub23" component={Les2Sub23} />
-        <Stack.Screen name="Les2Sub24" component={Les2Sub24} />
-        <Stack.Screen name="Les2Sub25" component={Les2Sub25} />
-        <Stack.Screen name="Les2Sub26" component={Les2Sub26} />
-        <Stack.Screen name="Les3Sub1" component={Les3Sub1} />
-        <Stack.Screen name="Les3Sub2" component={Les3Sub2} />
-        <Stack.Screen name="Les3Sub3" component={Les3Sub3} />
-        <Stack.Screen name="Les3Sub4" component={Les3Sub4} />
-        <Stack.Screen name="Les3Sub5" component={Les3Sub5} />
-        <Stack.Screen name="Les3Sub6" component={Les3Sub6} />
-        <Stack.Screen name="Les3Sub7" component={Les3Sub7} />
-        <Stack.Screen name="Les3Sub8" component={Les3Sub8} />
-        <Stack.Screen name="Les3Sub9" component={Les3Sub9} />
-        <Stack.Screen name="Les3Sub10" component={Les3Sub10} />
-        <Stack.Screen name="Les3Sub11" component={Les3Sub11} />
-        <Stack.Screen name="Les3Sub12" component={Les3Sub12} />
-        <Stack.Screen name="Les3Sub13" component={Les3Sub13} />
-        <Stack.Screen name="Les3Sub14" component={Les3Sub14} />
-        <Stack.Screen name="Les3Sub15" component={Les3Sub15} />
-        <Stack.Screen name="Les3Sub16" component={Les3Sub16} />
-        <Stack.Screen name="Lesson4" component={Lesson4}/>
-        <Stack.Screen name="Les4Sub1" component={Les4Sub1}/>
-        <Stack.Screen name="Les4Sub2" component={Les4Sub2}/>
-        <Stack.Screen name="Les4Sub3" component={Les4Sub3}/>
-        <Stack.Screen name="Les4Sub4" component={Les4Sub4}/>
-        <Stack.Screen name="Les4Sub5" component={Les4Sub5}/>
-        <Stack.Screen name="Les4Sub6" component={Les4Sub6}/>
-        <Stack.Screen name="Les4Sub7" component={Les4Sub7}/>
-        <Stack.Screen name="Les4Sub8" component={Les4Sub8}/>
-        <Stack.Screen name="Les4Sub9" component={Les4Sub9}/>
-        <Stack.Screen name="Les4Sub10" component={Les4Sub10}/>
-        <Stack.Screen name="Les4Sub11" component={Les4Sub11}/>
-        <Stack.Screen name="Les4Sub12" component={Les4Sub12}/>
-        <Stack.Screen name="Les4Sub13" component={Les4Sub13}/>
-        <Stack.Screen name="Les4Sub14" component={Les4Sub14}/>
-        <Stack.Screen name="Les4Sub15" component={Les4Sub15}/>
-        <Stack.Screen name="Les4Sub16" component={Les4Sub16}/>
-        <Stack.Screen name="Les4Sub17" component={Les4Sub17}/>
-        <Stack.Screen name="Les4Sub18" component={Les4Sub18}/>
-        <Stack.Screen name="Les4Sub19" component={Les4Sub19}/>
-        <Stack.Screen name="Les4Sub20" component={Les4Sub20}/>
-        <Stack.Screen name="Les4Sub21" component={Les4Sub21}/>
-        <Stack.Screen name="Les4Sub22" component={Les4Sub22}/>
-      </Stack.Navigator>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarActiveTintColor: "#CE5700",
+          tabBarStyle: [
+            {
+              display: "flex",
+            },
+            null,
+          ],
+        })}
+      >
+        <Tab.Screen
+          name="Home"
+          component={LessonList}
+          options={{
+            headerShown: false,
+            tabBarLabel: "",
+            tabBarIcon: ({ color, size }) => (
+              <Entypo name="home" size={30} color={color} />
+            ),
+            tabBarIconStyle: {
+              marginTop: 5, // Adjust the value according to your needs
+            },
+          }}
+        />
+        <Tab.Screen
+          name="Chatbot"
+          component={NotificationPage}
+          options={{
+            headerShown: false,
+            tabBarLabel: "",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="message-text"
+                size={30}
+                color={color}
+              />
+            ),
+            tabBarIconStyle: {
+              marginTop: 5, // Adjust the value according to your needs
+            },
+          }}
+        />
+        <Tab.Screen
+          name="Menu"
+          component={NotificationPage}
+          options={{
+            headerShown: false,
+            tabBarLabel: "",
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="notifications" size={30} color={color} />
+            ),
+            tabBarIconStyle: {
+              marginTop: 5, // Adjust the value according to your needs
+            },
+          }}
+        />
+        <Tab.Screen
+          name="Notification"
+          component={MenuPage}
+          options={{
+            headerShown: false,
+            tabBarLabel: "",
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="grid" size={30} color={color} />
+            ),
+            tabBarIconStyle: {
+              marginTop: 5, // Adjust the value according to your needs
+            },
+          }}
+        />
+        {/* Add more tabs with corresponding screens here */}
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
-
