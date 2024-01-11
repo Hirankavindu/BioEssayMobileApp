@@ -1,4 +1,5 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBlack, Logo, Menu1, Menu2, Menu3, Menu4 } from "../../assets";
@@ -13,7 +14,7 @@ const Menu = () => {
         });
       }, []);
   return (
-    <SafeAreaView className="relative flex-1 pt-12">
+    <SafeAreaView className="relative flex-1 pt-5">
       <View className="relative flex-row items-center pl-3 ">
         <Image source={Logo} width={200} height={30} />
       </View>

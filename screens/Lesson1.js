@@ -1,6 +1,7 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
+import { SafeAreaView } from "react-native-safe-area-context";
 import { Back, BackBox, Hero1, Hero2 } from '../assets';
 
 const Lesson1 = () => {
@@ -13,12 +14,12 @@ const Lesson1 = () => {
         });
     },[])
   return (
-    <View className="relative flex-1">
+    <SafeAreaView className="relative flex-1">
       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
         {/* Banner Start */}
         <View className="h-96 bg-[#29ADB2] flex-col">
           {/* Back Button start */}
-          <View className="px-3 pt-12 h-96">
+          <View className="px-3 pt-5 h-96">
             <View className="flex-row">
               <TouchableOpacity
                 className="items-center"
@@ -74,7 +75,7 @@ const Lesson1 = () => {
           {/* Sub Lesson 1 end */}
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 

@@ -1,8 +1,10 @@
-import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native'
+import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Back, Hero1, Logo, Notification, Search } from '../assets';
 import Category from '../components/Category';
+import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
     const navigation = useNavigation();
@@ -13,7 +15,7 @@ const HomeScreen = () => {
         });
     }, [])
   return (
-    <SafeAreaView className="relative flex-1 pt-12">
+    <SafeAreaView className="relative flex-1 pt-5">
       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
         <View className="relative flex-row items-center pl-3 ">
           <Image source={Logo} width={200} height={30} />
@@ -73,7 +75,10 @@ const HomeScreen = () => {
         {/* Start of Bio essay categories */}
         <View className="flex items-center px-3 pt-7">
           {/* Lesson 1 start */}
-          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073]" onPress={()=>navigation.navigate("Lesson1")}>
+          <TouchableOpacity
+            className="justify-center w-full h-16 rounded-lg bg-[#265073]"
+            onPress={() => navigation.navigate("Lesson1")}
+          >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -88,7 +93,10 @@ const HomeScreen = () => {
           {/* Lesson 1 end */}
 
           {/* Lesson 2 start */}
-          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Lesson2")}>
+          <TouchableOpacity
+            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3"
+            onPress={() => navigation.navigate("Lesson2")}
+          >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -103,7 +111,10 @@ const HomeScreen = () => {
           {/* Lesson 2 end */}
 
           {/* Lesson 3 start */}
-          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Lesson3")}>
+          <TouchableOpacity
+            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3"
+            onPress={() => navigation.navigate("Lesson3")}
+          >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -118,7 +129,10 @@ const HomeScreen = () => {
           {/* Lesson 3 end */}
 
           {/* Lesson 4 start */}
-          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=>navigation.navigate("Lesson4")}>
+          <TouchableOpacity
+            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3"
+            onPress={() => navigation.navigate("Lesson4")}
+          >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -133,7 +147,10 @@ const HomeScreen = () => {
           {/* Lesson 4 end */}
 
           {/* Lesson 5 start */}
-          <TouchableOpacity className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3" onPress={()=> navigation.navigate("Lesson1")}>
+          <TouchableOpacity
+            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3"
+            onPress={() => navigation.navigate("Lesson1")}
+          >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
@@ -149,6 +166,7 @@ const HomeScreen = () => {
         </View>
         {/* End of Bio essay categories */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 }

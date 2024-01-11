@@ -1,13 +1,13 @@
 import {
   View,
   Text,
-  SafeAreaView,
   Image,
   TouchableOpacity,
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
 
 const Les2Sub3 = () => {
@@ -20,7 +20,7 @@ const Les2Sub3 = () => {
   }, []);
 
   return (
-    <SafeAreaView className="relative flex-1 pt-10 bg-white">
+    <SafeAreaView className="relative flex-1 pt-5 bg-white">
       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
         {/* Back Button start */}
         <View className="px-3 h-14">

@@ -1,4 +1,5 @@
-import { View, Text, SafeAreaView, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from "@react-navigation/native";
 import { BackBox2, Logo, NewImage, Update} from '../../assets';
@@ -14,7 +15,7 @@ const Notification = () => {
        });
      }, []);
   return (
-    <SafeAreaView className="relative pt-12">
+    <SafeAreaView className="relative pt-5">
       {/* Back Button start */}
       <View className="px-3">
         <View className="flex-row">
