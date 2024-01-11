@@ -22,7 +22,7 @@ const Lesson1 = () => {
             <View className="flex-row">
               <TouchableOpacity
                 className="items-center"
-                onPress={() => navigation.navigate("Home")}
+                onPress={() => navigation.navigate("Home1")}
               >
                 <Image source={BackBox} width={200} height={30} />
               </TouchableOpacity>

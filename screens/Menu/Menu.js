@@ -48,7 +48,7 @@ const Menu = () => {
         {/* Sub Lesson 1 start */}
         <TouchableOpacity
           className="justify-center w-full h-20 rounded-lg bg-[#DCDCDC] mt-4"
-          onPress={() => navigation.navigate("Notification")}
+          onPress={() => navigation.navigate("Notification1")}
         >
           <View className="flex flex-col items-center">
             <View className="flex-row w-full">
@@ -71,7 +71,7 @@ const Menu = () => {
         {/* Sub Lesson 1 start */}
         <TouchableOpacity
           className="justify-center w-full h-20 rounded-lg bg-[#DCDCDC] mt-4"
-          onPress={() => navigation.navigate("Notification")}
+          onPress={() => navigation.navigate("Notification1")}
         >
           <View className="flex flex-col items-center">
             <View className="flex-row w-full">
@@ -94,7 +94,7 @@ const Menu = () => {
         {/* Sub Lesson 1 start */}
         <TouchableOpacity
           className="justify-center w-full h-20 rounded-lg bg-[#DCDCDC] mt-4"
-          onPress={() => navigation.navigate("Notification")}
+          onPress={() => navigation.navigate("Notification1")}
         >
           <View className="flex flex-col items-center">
             <View className="flex-row w-full">

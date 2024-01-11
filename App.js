@@ -84,7 +84,7 @@ const Tab = createBottomTabNavigator();
 
 const LessonList = () => (
   <Stack.Navigator>
-    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Home1" component={HomeScreen} />
     <Stack.Screen name="Lesson1" component={Lesson1} />
     <Stack.Screen name="Lesson2" component={Lesson2} />
     <Stack.Screen name="Lesson3" component={Lesson3} />
@@ -160,7 +160,7 @@ const LessonList = () => (
 const MenuPage = () => (
   <Stack.Navigator>
     <Stack.Screen name="Menu" component={Menu} />
-    <Stack.Screen name="Notification" component={Notification} />
+    <Stack.Screen name="Notification1" component={Notification} />
   </Stack.Navigator>
 );
 
