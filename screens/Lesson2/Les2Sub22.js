@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -129,14 +130,15 @@ const Les2Sub22 = () => {
             ක්‍රියා කරයි.{"\n"}
             {"\n"}ඒ නිසා රුබිස්කෝ C3 ශාකවලට වඩා වැඩි කාර්යක්ෂමතාවයකින් ක්‍රියා
             කරයි.{"\n"}
-            {"\n"}ජල හානිය අවම කර ගැනීම සදහා පූටිකා වැසී තිබියදීත් අවශ්‍ය
-            තරම් CO2 සාන්ද්‍රණයක් ලබා ගැනීමට හැකියාවක් CO2 සාන්ද්‍රණය යන්ත්‍රණය
-            නිසා C4 ශාකවලට ඇත.
+            {"\n"}ජල හානිය අවම කර ගැනීම සදහා පූටිකා වැසී තිබියදීත් අවශ්‍ය තරම්
+            CO2 සාන්ද්‍රණයක් ලබා ගැනීමට හැකියාවක් CO2 සාන්ද්‍රණය යන්ත්‍රණය නිසා
+            C4 ශාකවලට ඇත.
           </Text>
         </View>
         {/* Lesson Note End */}
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

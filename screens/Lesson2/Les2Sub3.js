@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -156,6 +157,7 @@ const Les2Sub3 = () => {
         </View>
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

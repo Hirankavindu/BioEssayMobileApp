@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -135,8 +136,8 @@ const Les2Sub8 = () => {
             {"\n"}ශ්වසනයේදී ඔක්සිකාරකයක් ලෙස ක්‍රියාකරයි.{"\n"}
             {"\n"}
             NADP+{"\n"}
-            සහඑන්සයිම ලෙස ක්‍රියාකරයි.{"\n"}ඉලෙක්ට්‍රෝන වාහකයක් ලෙස
-            ක්‍රියාකරයි.{"\n"}ප්‍රභාසංස්ලේෂණයේදී ඔක්සිකාරකයක් ලෙස ක්‍රියාකරයි.
+            සහඑන්සයිම ලෙස ක්‍රියාකරයි.{"\n"}ඉලෙක්ට්‍රෝන වාහකයක් ලෙස ක්‍රියාකරයි.
+            {"\n"}ප්‍රභාසංස්ලේෂණයේදී ඔක්සිකාරකයක් ලෙස ක්‍රියාකරයි.
             {"\n"}
             {"\n"}
             FAD {"\n"}
@@ -146,6 +147,7 @@ const Les2Sub8 = () => {
         </View>
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };
