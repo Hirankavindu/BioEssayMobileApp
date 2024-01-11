@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -175,16 +176,16 @@ const Les4Sub20 = () => {
             බොහෝ ඵල වර්ග ඉදීම දිරිගන්වයි.{"\n"}
             {"\n"}පත්‍රවල ඡේදනය දිරි ගන්වයි.{"\n"}
             {"\n"}බීජ පැළවල ත්‍රිත්ව ප්‍රචාරණ දිරිගන්වයි. {"\n"}
-            {"\n"}එනම්,කද දික්වීම නිශේධනය පාර්ශ්වික,වර්ධනය දිරිගන්වයි,
-            ,තිරස් වර්ධනය දිරිගන්වයි,වෘද්ධතාව වේගවත් කරයි,මුල් හා
-            මූලකේශ වර්ධනය දිරිගන්වයි,අන්නාසි කුලයේ ශාකවල මල්හට ගැනීම
-            ප්‍රේරණය කරවයි.
+            {"\n"}එනම්,කද දික්වීම නිශේධනය පාර්ශ්වික,වර්ධනය දිරිගන්වයි, ,තිරස්
+            වර්ධනය දිරිගන්වයි,වෘද්ධතාව වේගවත් කරයි,මුල් හා මූලකේශ වර්ධනය
+            දිරිගන්වයි,අන්නාසි කුලයේ ශාකවල මල්හට ගැනීම ප්‍රේරණය කරවයි.
           </Text>
         </View>
         {/* Lesson Note End */}
 
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

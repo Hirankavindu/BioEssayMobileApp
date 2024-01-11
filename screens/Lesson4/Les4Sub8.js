@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -67,8 +68,8 @@ const Les4Sub8 = () => {
             වැඩිවීම ද්විතීක වර්ධනය යි.{"\n"}
             {"\n"}මෙය සියලුම විවෘත බීජක ශාක විශේෂ හා බොහෝ දීවීබීජ පත්‍රී ශාක
             විශේෂවල කදන්වල සිදුවේ.{"\n"}
-            {"\n"}මෙහිදී පාර්ශවික විභාජක වන සනාල කැම්බියම හා,වල්ක කැම්බියම
-            මගින් නව සෛල හා පටක නිපදවයි.{"\n"}
+            {"\n"}මෙහිදී පාර්ශවික විභාජක වන සනාල කැම්බියම හා,වල්ක කැම්බියම මගින්
+            නව සෛල හා පටක නිපදවයි.{"\n"}
             {"\n"}සනාල කැම්බියම මගින් ප්‍රාථමික ශෛලම දෙසට ද්විතීක ශෛලම (කාෂ්ඨය)
             හා ප්‍රාථමික ප්ලෝයම දෙසට ද්විතීයික ප්ලෝයම නිපදවයි.{"\n"}
             {"\n"}ඉන් කදේ සනාල ප්‍රවාහය වැඩිවේ.{"\n"}
@@ -151,6 +152,7 @@ const Les4Sub8 = () => {
 
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

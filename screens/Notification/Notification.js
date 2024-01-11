@@ -15,7 +15,7 @@ const Notification = () => {
        });
      }, []);
   return (
-    <SafeAreaView className="relative pt-5">
+    <SafeAreaView className="relative pt-5 bg-[#26918a]">
       {/* Back Button start */}
       <View className="px-3">
         <View className="flex-row">

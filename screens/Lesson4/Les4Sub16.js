@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -166,14 +167,15 @@ const Les4Sub16 = () => {
             ඇතුළු වීමට හේතු වේ.{"\n"}
             {"\n"}ජලය ඇතුළු වීමෙන් ධන පීඩනයක් ඇතිවේ.{"\n"}
             {"\n"}එමගින් යුෂය පෙනේර නළය ඔස්සේ තල්ලු වී ගලා යයි.{"\n"}
-            {"\n"}අපායනයේදි සීනි හරකිරීම(ප්ලෝයම හර කිරීම) හා ඒ සමඟ ජලය
-            ප්ලෝයමයේ සිට ශෛලමය වෙත ඉවත්වීම නිසා පීඩනය අඩුවේ.
+            {"\n"}අපායනයේදි සීනි හරකිරීම(ප්ලෝයම හර කිරීම) හා ඒ සමඟ ජලය ප්ලෝයමයේ
+            සිට ශෛලමය වෙත ඉවත්වීම නිසා පීඩනය අඩුවේ.
           </Text>
         </View>
         {/* Lesson Note End */}
 
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };
