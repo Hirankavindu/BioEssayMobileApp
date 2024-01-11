@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -137,14 +138,15 @@ const Les3Sub11 = () => {
             {"\n"}
             {"\n"}
             මේවා බීජාවරණයකින් වට වී ඇත.{"\n"}
-            {"\n"}බීජ ව්‍යාපත් වී හිතකර පරිසර තත්ත්ව ලැබුණු විට ඒවා ප්‍රරෝහණය
-            වී බීජ පැළ නිපදවයි.( ළපටි බීජාණු ශාකය නිපදවයි)
+            {"\n"}බීජ ව්‍යාපත් වී හිතකර පරිසර තත්ත්ව ලැබුණු විට ඒවා ප්‍රරෝහණය වී
+            බීජ පැළ නිපදවයි.( ළපටි බීජාණු ශාකය නිපදවයි)
           </Text>
         </View>
         {/* Lesson Note End */}
 
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

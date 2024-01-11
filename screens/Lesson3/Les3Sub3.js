@@ -6,6 +6,7 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useLayoutEffect } from "react";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBox, BackBox2, Hero1, Hero2 } from "../../assets";
@@ -86,8 +87,8 @@ const Les3Sub3 = () => {
             නොනැසී පැවතුණි.{"\n"}
             {"\n"}ව්සේ ඉතිරිවන දිගුගෙල ජිරාෆයන් ප්‍රජනනයෙන් තවත් දිගුගෙල
             ජිරාෆයන් ගහණයක් ඇතිකරගන්නා ලදි.{"\n"}
-            {"\n"}මෙම ක්‍රියාවලිය පරම්පරා කිහිපයක් සිදුවීමෙන් වර්තමානයේ
-            පවතින දිගුගෙල ජිරාෆයන් ගහණය ඇති විය.
+            {"\n"}මෙම ක්‍රියාවලිය පරම්පරා කිහිපයක් සිදුවීමෙන් වර්තමානයේ පවතින
+            දිගුගෙල ජිරාෆයන් ගහණය ඇති විය.
           </Text>
         </View>
         {/* Lesson Note End */}
@@ -212,6 +213,7 @@ const Les3Sub3 = () => {
 
         {/* Lesson Note End */}
       </ScrollView>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };
