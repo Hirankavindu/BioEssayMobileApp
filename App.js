@@ -78,6 +78,7 @@ import Les4Sub21 from "./screens/Lesson4/Les4Sub21";
 import Les4Sub22 from "./screens/Lesson4/Les4Sub22";
 import Menu from "./screens/Menu/Menu";
 import Notification from "./screens/Notification/Notification";
+import AiChat from "./screens/AiChat/AiChat";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -85,6 +86,7 @@ const Tab = createBottomTabNavigator();
 const LessonList = () => (
   <Stack.Navigator>
     <Stack.Screen name="Home1" component={HomeScreen} />
+    <Stack.Screen name="Notification" component={Notification} />
     <Stack.Screen name="Lesson1" component={Lesson1} />
     <Stack.Screen name="Lesson2" component={Lesson2} />
     <Stack.Screen name="Lesson3" component={Lesson3} />
@@ -160,7 +162,14 @@ const LessonList = () => (
 const MenuPage = () => (
   <Stack.Navigator>
     <Stack.Screen name="Menu" component={Menu} />
-    <Stack.Screen name="Notification1" component={Notification} />
+    <Stack.Screen name="Notification1" component={AiChat} />
+  </Stack.Navigator>
+);
+
+const AiChatPage = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="AiChat" component={AiChat} />
+    {/* <Stack.Screen name="Menu" component={Menu} /> */}
   </Stack.Navigator>
 );
 
@@ -201,7 +210,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Chatbot"
-          component={NotificationPage}
+          component={AiChatPage}
           options={{
             headerShown: false,
             tabBarLabel: "",

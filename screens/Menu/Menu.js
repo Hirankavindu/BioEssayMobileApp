@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Back, BackBlack, Logo, Menu1, Menu2, Menu3, Menu4 } from "../../assets";
+import { Ionicons } from "@expo/vector-icons";
 
 const Menu = () => {
 
@@ -16,10 +17,19 @@ const Menu = () => {
   return (
     <SafeAreaView className="relative flex-1 pt-5">
       <View className="relative flex-row items-center pl-3 ">
-        <Image source={Logo} width={200} height={30} />
+        {/* <Image source={Logo} width={200} height={30} /> */}
+        <View className="">
+          <Text className="text-4xl text-[#CE5700] font-black">Bio</Text>
+        </View>
+        <View>
+          <Text className="text-3xl text-[#3A3937] font-bold">Essay</Text>
+        </View>
+        <View className="pt-2 pl-2">
+          <Text className="text-3xl text-[#043682] font-bold">සි‍ංහල</Text>
+        </View>
       </View>
       <View className="pl-3">
-        <Text className="text-4xl font-black text-[#454545]">Menu</Text>
+        <Text className="text-4xl font-black text-[#363062]">Menu</Text>
       </View>
 
       <View className="px-3">

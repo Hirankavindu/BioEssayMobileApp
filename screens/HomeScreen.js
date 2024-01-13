@@ -4,6 +4,7 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Back, Hero1, Logo, Notification, Search } from '../assets';
 import Category from '../components/Category';
+import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
@@ -17,17 +18,31 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className="relative flex-1 pt-5">
       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
-        <View className="relative flex-row items-center pl-3 ">
-          <Image source={Logo} width={200} height={30} />
-          <Image
+        <View className="relative flex-row items-center pl-3">
+          {/* <Image source={Logo} width={200} height={30} /> */}
+          {/* <Image
             source={Notification}
             width={25}
             height={29}
             className="absolute inset-y-0 right-0 mr-3"
-          />
+          /> */}
+          {/* Start Logo */}
+          <View className="">
+            <Text className="text-4xl text-[#CE5700] font-black">Bio</Text>
+          </View>
+          <View>
+            <Text className="text-3xl text-[#3A3937] font-bold">Essay</Text>
+          </View>
+          <View className="pt-2 pl-2">
+            <Text className="text-3xl text-[#043682] font-bold">සි‍ංහල</Text>
+          </View>
+          <TouchableOpacity className="absolute inset-y-0 right-0 justify-center mr-3" onPress={()=>navigation.navigate("Notification")}>
+            <Ionicons name="notifications" size={30} color={"#3A3937"} />
+          </TouchableOpacity>
         </View>
+        {/* end Logo */}
         {/* Welcome back greeting start */}
-        <View className="px-3 pt-2">
+        <View className="px-3">
           <Text className="text-xl font-bold text-gray-600">Welcome back</Text>
         </View>
         {/* Welcome back greeting end */}
@@ -148,13 +163,13 @@ const HomeScreen = () => {
 
           {/* Lesson 5 start */}
           <TouchableOpacity
-            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3"
+            className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3 mb-5"
             onPress={() => navigation.navigate("Lesson1")}
           >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
                 <Text className="pl-3 text-base font-bold text-white">
-                  ශාක ආකාරය හා ක්‍රියාකාරිත්වය
+                  සත්ත්ව ආකාරය හා ක්‍රියාකාරිත්වය
                 </Text>
                 <View className="absolute inset-y-0 right-0 justify-center pr-3 mr-3">
                   <Image source={Back} className="w-[10] h-[15]" />

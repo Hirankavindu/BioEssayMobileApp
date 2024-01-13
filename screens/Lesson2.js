@@ -143,7 +143,7 @@ const Lesson2 = () => {
           {/* Sub Lesson 7 start */}
           <TouchableOpacity
             className="justify-center w-full h-32 rounded-lg bg-[#744e1f] mt-3"
-            onPress={() => navigation.navigate("Lesson1")}
+            onPress={() => navigation.navigate("Les2Sub5")}
           >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
