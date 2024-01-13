@@ -13,3 +13,4 @@ export { default as Menu3 } from "./menu3.png";
 export { default as Menu4 } from "./menu4.png";
 export { default as BackBlack } from "./backBlack.png";
 export { default as Hero3 } from "./hero1.png";
+export { default as NotifiBell } from "./notifibell.png";
