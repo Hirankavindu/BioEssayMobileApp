@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bioessay",
-    "slug": "bioessay",
+    "name": "BioEssay Sinhala",
+    "slug": "BioEssaySinhala",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hiranwelagedara.bioessay"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "38e97706-c93b-44a5-8e13-3c5707997785"
+      }
     }
   }
 }

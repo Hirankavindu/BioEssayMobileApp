@@ -164,7 +164,7 @@ const HomeScreen = () => {
           {/* Lesson 5 start */}
           <TouchableOpacity
             className="justify-center w-full h-16 rounded-lg bg-[#265073] mt-3 mb-5"
-            onPress={() => navigation.navigate("Lesson1")}
+            onPress={() => navigation.navigate("AiChat")}
           >
             <View className="flex flex-col items-center">
               <View className="flex-row w-full">
